@@ -18,7 +18,7 @@ def appearance(intervals: dict):
     :return: сумма общего время присуствия в секундах для каждого ключа
     """
     for i in tests: # проверка четности интервалов времени
-        c = (i["data"].values())
+        c = i["data"].values()
         for j in c:
             if len(j) % 2 != 0:
                 print(f"Дано нечетное количество интервалов временни в {j}")
